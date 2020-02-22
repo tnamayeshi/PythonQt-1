@@ -20,13 +20,9 @@ macx {
   # Make sure that you set the environment variable PYTHON_LIB to point to
   # the directory where the python libs are located.
   #
-  # When using the prebuild Python installer, this will be:
-  # set PYTHON_PATH = c:\Python26
-  # set PYTHON_LIB  = c:\Python26\libs
-  #
-  # When using the python sources, this will be something like:
-  # set PYTHON_PATH = c:\yourDir\Python-2.6.1\
-  # set PYTHON_LIB  = c:\yourDir\Python-2.6.1\PCbuild8\Win32
+  
+set PYTHON_PATH=C:\Users\Tayebeh\AppData\Local\Programs\Python\Python37
+set PYTHON_LIB=C:\Users\Tayebeh\AppData\Local\Programs\Python\Python37\libs
 
   # check if debug or release
   CONFIG(debug, debug|release) {

@@ -317,6 +317,10 @@ target_compile_options(PythonQt PRIVATE
   $<$<CXX_COMPILER_ID:MSVC>:/bigobj>
   )
 
+target_compile_options(PythonQt PRIVATE
+  $<$<CXX_COMPILER_ID:GNU>:-Wa,-mbig-obj>
+  )
+
 target_link_libraries(PythonQt
               ${PYTHON_LIBRARY}
               ${QT_LIBRARIES}
